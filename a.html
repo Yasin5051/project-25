@@ -1,0 +1,41 @@
+<html>
+
+<body>
+    <h1>Array</h1>
+    <script>
+        var x = 34;//only 1 value
+        var friends = ['Ruba', 'Zeny', 'Hari', 'Donald', 'Sumanth', 'Yasin'];//many values
+        //Position/index;      0       1      2      3        4         5 
+        // array : collection of values, values are stored sequentially in computer's memory
+        //so values can be accessed easily using index
+
+        document.write(friends[3] + "<br>");
+        for (x = 0; x < friends.length; x += 1)//friends length=6, 0 to 5, 0 to <friends.length
+        {
+            document.write(friends[x] + "<br>");
+        }
+        var fr = friends.join('***');
+        document.write(fr + "<br>");
+        document.write(friends + "<br>");
+        var y = friends.pop();
+        document.write(friends + "<br>");
+        document.write("Deleted element : " + y + "<br>");
+
+        function f1(a, b, c) {
+            document.write("f1() starts<br>");
+            var ans = a + b + c;
+            document.write(ans + "<br>");
+            document.write("f1() ends<br>");
+            return ans;
+        }
+        function avg(n1, n2, n3) {
+            document.write("<br> avg() starts<br>");
+            var a = f1(n1, n2, n3) / 3;
+            document.write(a + "<br>");
+            document.write("avg() ends<br>");
+        }
+        avg(4, 1, 9);
+    </script>
+</body>
+
+</html>
